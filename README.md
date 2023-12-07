@@ -1,0 +1,1 @@
+Here we go starting a project again! Boy, for a 31 year old dude who has stopped doing Air Traffic Control to start software development, I thought it would be much, much harder. Granted, there's a whole lot I don't know! I know I've only scratched the surface, but compared to ATC - where the surface is memorization and fear-mongering - this is a blast! 
