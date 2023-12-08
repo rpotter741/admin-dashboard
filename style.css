@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "fantasy";
+    src: url(/fonts/Luminari-Regular.woff);
+}
+
+body {
+    height: 98vh;
+    margin: 0;
+    font-family: 'fantasy';
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template: auto 4fr / 1fr 4fr;
+    margin: 0;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+     background-color: lightblue;
+     padding: 1rem 2rem;
+    gap: 10px;
+    box-shadow: 0 0 2rem black;
+    
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#searchIcon {
+    height: 25px;
+
+}
+
+#searchbar {
+    border-radius: 12px;
+    background-color: rgba(240, 240, 240, .7);
+    height: 25px;
+    width: 100%;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#notificationsIcon {
+    height: 25px;
+    justify-self: center;
+
+}
+
+#profilePicture {
+    border-radius: 25px;
+}
+
+#profilePicture.small {
+    height: 44px;
+    justify-self: end;
+}
+
+#profileName.small {
+    align-self: center;
+    font-weight: bold;
+    justify-self: start;
+    font-size: 20px;
+}
+
+.welcomeContainer {
+    display: grid;
+    grid-template: 1fr 1fr / auto 1fr;
+    gap: 5px;
+}
+
+#profilePicture.large {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 75px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: end;
+}
+
+.greeting {
+   align-self: end;
+}
+
+#profileName.large {
+    align-self: start;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#newPost, #uploadPhoto, #sharePost {
+    padding: 6px 10px;
+    background-color: lightslategray;
+    border-radius: 12px;
+    height: 40px;
+    width: 105px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: whitesmoke
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    background-color: lightslategray;
+    box-sizing: border-box;
+    padding: 0.5rem, 2rem;
+    gap: 12px;
+}
+
+.mainLinkContainer, .secondaryLinkContainer {
+    display: flex;
+    align-items: center;
+
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebarDashboardHeader {
+    font-size: 200%;
+    align-self: center;
+}
+
+#sidebarLogo {
+    display: flex;
+}
+
+#sidebarLogoImg {
+    height: 120px;
+    align-self: center;
+    float: right;
+    margin: 0;
+
+}
+
+ul {
+    list-style: none;
+    list-style-type: disc;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navLink p {
+    font-size: 22px;
+}
+
+#navIcon {
+    height: 22px;
+}
+
+.mainContent {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: lightgray;
+    padding: 1rem 2rem;
+    gap: 20px;
+}
+
+#mPHeader {
+    grid-area: 1/ 1 / 1 /3;
+    font-size: 28px;
+    align-self: center;
+    justify-self: start;
+}
+
+.mainProjects {
+    display: grid;
+    grid-template-columns: 1fr repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto repeat(auto-fit, 1fr);
+    column-gap: 35px;
+    row-gap: 15px;
+    place-items: center;
+}
+
+#mAHeader {
+    grid-area: 1 / 1 / 1 / 3;
+    font-size: 28px;
+    padding: 15px;
+    align-self: center;
+}
+
+.mainCard {
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    display: grid;
+    grid-template: 3fr 1fr / 2rem 1fr;
+    border-left: solid steelblue 1.5rem;
+    box-sizing: border-box;
+    }
+
+.textContainer {
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainCard h3 {
+    justify-self: top;
+    
+}
+
+.mainCard p {
+    justify-self: bottom;
+    color: rgba(0,0,0,.6)
+}
+
+.actionsContainer {
+    grid-area: 2/2/3/3;
+    justify-self: end;
+    padding: .5rem;
+    padding-right: 10%;
+}
+
+.actionIcon {
+    height: 35px;
+}
+
+.secondSidebar {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto 1fr;
+    grid-auto-flow: dense;
+    row-gap: 15px;
+}
+
+#mainAnnouncements {
+    display: flex;
+    flex-direction: column;
+    background-color: lightsteelblue;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+
+}
+
+.containerBorder {
+    height: 1px;
+    width: 100%;
+    border-top: solid black 1px;
+}
+
+#mTHeader {
+    grid-area: 3 / 1 / 3 / 3;
+    font-size: 28px;
+    padding: 15px;
+    align-self: center;
+}
+
+#mainTrending {
+    grid-area: 4 / 1 / 6 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    background-color: lightsteelblue;
+    border-radius: 25px;
+    justify-content: space-around;
+}
+
+.trendingPerson {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    font-size: 16px;
+}
+
+.trendingProfilePicture {
+    height: 44px;
+    border-radius: 50%;
+}
