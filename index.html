@@ -4,19 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Underwood Alliance Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="wrapper sidebar"></div>
-        <div class="wrapper header"></div>
-        <div class="wrapper mainContent">
-            <div class="wrapper" id="mainProjects">
-                <div id="mPHeader"></div>
+        <div class="header">
+            <div class="searchContainer">
+                <img id="searchIcon" src="/svgs/search-web.svg">
+                <input type="text" id="searchbar">
             </div>
-            <div id="mainAnnouncementsHeader"></div>
-            <div id="mainTrendingHeader"></div>
+            <div class="profileContainer">
+                <img id="notificationsIcon" src="/svgs/bell-badge-outline.svg" alt="">
+                <img src="/img/robbiepottsdm_oil_painting_portrait_of_a_middle_aged_human_ad_3b233520-fde1-4743-b301-30d728e1972c_1.png" alt="" id="profilePicture" class="small">
+                <div id="profileName" class="small">Sinok Kai</div>
+            </div>
+            <div class="welcomeContainer">
+                <img src="/img/robbiepottsdm_oil_painting_portrait_of_a_middle_aged_human_ad_3b233520-fde1-4743-b301-30d728e1972c_1.png" alt="" id="profilePicture" class="large">
+                <div class="greeting">Welcome back,</div>
+                <div id="profileName" class="large">Sinok Kai <span id="handle">(@b.stagsworn.i)</span></div>
+            </div>
+            <div class="buttonContainer">
+                <button id="newPost">New</button>
+                <button id="uploadPhoto">Upload</button>
+                <button id="sharePost">Share</button>
+            </div>            
         </div>
-    </div>
-    
+        <nav class="sidebar">
+                <div class="logoContainer">
+                    <a id="sidebarLogo"><img id="sidebarLogoImg" src="/img/PR_logo_png.png" alt="RobbiePottsDM Logo"></a>
+                    <h3 id="sidebarDashboardHeader">Underwood Alliance</h3>
+                </div>
+                <div class="mainLinkContainer">
+                        <ul>
+                            <li class="navLink">
+                                <img id="navIcon" src="svgs/home.svg" alt="">
+                                <p>Home</p>
+                            </li>
+                            <li class="navLink">
+                                <img id="navIcon" src="svgs/account.svg" alt="">
+                                <p>Profile</p>
+                            </li>
+                            <li class="navLink">
+                                <img id="navIcon" src="svgs/message.svg" alt="">
+                                <p>Messages</p>
+                            </li>
+                            <li class="navLink">
+                                <img id="navIcon" src="svgs/timer-sand-full.svg" alt="">
+                                <p>History</p>
+                            </li>
+                            <li class="navLink">
+                                <img id="navIcon" src="svgs/view-list.svg" alt="">
+                                <p>Tasks</p>
+                            </li>
+                            <li class="navLink">
+                                <img id="navIcon" src="svgs/account-group.svg" alt="">
+                                <p>Communities</p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="secondaryLinkContainer">
+                    <ul>
+                        <li class="navLink">
+                            <img id="navIcon" src="svgs/cog.svg" alt="">
+                            <p>Settings</p>
+                        </li>
+                        <li class="navLink">
+                            <img id="navIcon" src="svgs/wizard-hat.svg" alt="">
+                            <p>Support</p>
+                        </li>
+                        <li class="navLink">
+                            <img id="navIcon" src="svgs/shield-account.svg" alt="">
+                            <p>Privacy</p>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <div class="mainContent">
+            <div class="mainProjects">
+                <div id="mPHeader">Your Projects</div>
+                <div class="mainCard">
+                    <div class="textContainer">
+                        <h3>Piercing Ore Refining Technique</h3>
+                        <p>Establishing a higher temperature in the forge utilizing remarkably rare, albeit powerful, Synadrra Salt from Old Ornarion yields improved ratios.</p>
+                    </div>
+                    <div class="actionsContainer">
+                        <img src="svgs/star-outline.svg" alt="" class="actionIcon">
+                        <img src="svgs/delete.svg" alt="" class="actionIcon">
+                        <img src="svgs/share-all-outline.svg" alt="" class="actionIcon">
+                    </div>
+                </div>
+                <div class="mainCard">
+                    <div class="textContainer">
+                        <h3>Rebuild Syndicate</h3>
+                        <p>The Great Sacrifice nearly destroyed Vals'kar as a whole; it all but annihilated the Syndicate. Though their power was great, so too was their purpose - find allies to rebuild it from the ground up.</p>
+                    </div>
+                    <div class="actionsContainer">
+                        <img src="svgs/star-outline.svg" alt="" class="actionIcon">
+                        <img src="svgs/delete.svg" alt="" class="actionIcon">
+                        <img src="svgs/share-all-outline.svg" alt="" class="actionIcon">
+                    </div>
+                </div>
+                <div class="mainCard">
+                    <div class="textContainer">
+                        <h3>Support Lancelot</h3>
+                        <p>Lancelot looks to what remains of Kasenax's ruined organization. It's been long-dead to its creator, but Lancelot's displacement through time has startled him. Help him adapt.</p>
+                    </div>
+                    <div class="actionsContainer">
+                        <img src="svgs/star-outline.svg" alt="" class="actionIcon">
+                        <img src="svgs/delete.svg" alt="" class="actionIcon">
+                        <img src="svgs/share-all-outline.svg" alt="" class="actionIcon">
+                    </div>
+                </div>
+                <div class="mainCard">
+                    <div class="textContainer">
+                        <h3>Bury Felix Buendia</h3>
+                        <p>Felix's death is an unfortunate consequence of his addiction to challenging Lady Luck. He lived and died by the same mantra - "Dice don't lie." See to it he receives the burial he deserves.</p>
+                    </div>
+                    <div class="actionsContainer">
+                        <img src="svgs/star-outline.svg" alt="" class="actionIcon">
+                        <img src="svgs/delete.svg" alt="" class="actionIcon">
+                        <img src="svgs/share-all-outline.svg" alt="" class="actionIcon">
+                    </div>
+                </div>
+                <div class="mainCard">
+                    <div class="textContainer">
+                        <h3>Fund Taewen's Orphanages</h3>
+                        <p>Though he is wealthy, the power-vaccum left in the wake of the Great Sacrifice has made his efforts that much harder. See to it his mission is accomplished.</p>
+                    </div>
+                    <div class="actionsContainer">
+                        <img src="svgs/star-outline.svg" alt="" class="actionIcon">
+                        <img src="svgs/delete.svg" alt="" class="actionIcon">
+                        <img src="svgs/share-all-outline.svg" alt="" class="actionIcon">
+                    </div>
+                </div>
+                <div class="mainCard">
+                    <div class="textContainer">
+                        <h3>Recover Artifacts</h3>
+                        <p>Since Vescania's dissolution, timeless artifacts are no longer protected. Rescue them from the clutches of what remains of that tyrannical government.</p>
+                    </div>
+                    <div class="actionsContainer">
+                        <img src="svgs/star-outline.svg" alt="" class="actionIcon">
+                        <img src="svgs/delete.svg" alt="" class="actionIcon">
+                        <img src="svgs/share-all-outline.svg" alt="" class="actionIcon">
+                    </div>
+                </div>
+            </div>
+            <div class="secondSidebar">
+                <div id="mAHeader">Announcements</div>
+                <div id="mainAnnouncements">
+                    <div class="announcement">
+                        <h3>First Announcement!</h3>
+                        <p>Content!</p>
+                    </div>
+                    <div class="containerBorder"></div>
+                    <div class="announcement">
+                        <h3>Second Announcement!</h3>
+                        <p>Even More Content!</p>
+                    </div>
+                    <div class="containerBorder"></div>
+                    <div class="announcement">
+                        <h3>Third Announcement!?</h3>
+                        <p>My my, how the the turn tables...</p>
+                    </div>
+
+                </div>
+                <div id="mTHeader">Trending</div>
+                <div id="mainTrending">
+                    <div class="trendingPerson">
+                        <img src="img/gildram_gromm.png" alt="" class="trendingProfilePicture">
+                        <p>Gildram Gromm (@gGromDaBomb)</p>
+                    </div>
+                    <div class="trendingPerson">
+                        <img src="img/grakon_olikan.png" alt="" class="trendingProfilePicture">
+                        <p>Grakon Olikan (@goliathsRule)</p>
+                    </div>
+                    <div class="trendingPerson">
+                        <img src="img/gideon_havswallow.png" alt="" class="trendingProfilePicture">
+                        <p>Gideon Havswallow (@nvr4getKille)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
